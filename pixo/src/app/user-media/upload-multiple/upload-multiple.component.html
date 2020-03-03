@@ -1,0 +1,53 @@
+
+<div class="row">
+    <div class="col-3">
+        <h2 class="mt-2 mb-3 text-center">Media Upload</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a  class="nav-link btn-primary btn-lg" [routerLink]="['/upload']">Single Media</a>
+            </li><br>
+            <li class="nav-item">
+                <a  class="nav-link btn-primary btn-lg" [routerLink]="['/upload-multiple']">Multiple Media</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col">
+        <h2 class="mt-2 mb-3 text-center">Upload Media</h2>
+        <form class="gormgroup" ngNativeValidate [formGroup]="myFormGroup" (ngSubmit)="multipleUpload()">
+            <div class="form-group row">
+                <label for="horizontalInputEmail" class="col-sm-3 col-form-label"><b>Browse</b></label>
+                <div class="col-sm-5">
+                    <input type="file" class="form-control" accept="" [formControl]="myFormGroup.controls['media']" (change)="fileEvent($event.target.files)"  required multiple >
+                </div>
+               
+            </div>
+            <div *ngFor="let i of count">
+            <div class="form-group row">
+                <label  class="col-sm-3 col-form-label"><b>Title</b></label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" [formControl]="myFormGroup.controls['title']"  required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-sm-3 col-form-label"><b>Description</b></label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" [formControl]="myFormGroup.controls['description']" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label  class="col-sm-3 col-form-label"><b>Tags</b></label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" [formControl]="myFormGroup.controls['tags']" required>
+                </div>
+            </div>
+            <hr/>
+        </div>
+            <div class="form-group row">
+            <div class="offset-sm-4 col-sm-9">
+                <input type="submit" value="Upload All" class="btn btn-primary"/>
+            </div>
+            </div>
+        
+        </form>
+    </div>
+</div>

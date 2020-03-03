@@ -1,0 +1,32 @@
+<div *ngIf="!auth.isUserLoggedIn()">
+    <form class="formgroup" ngNativeValidate [formGroup]="myFormGroup" (ngSubmit)="login()" >
+        <h2 class="text-center" *ngIf="!authorized" style="color: red;font-weight: bold;">{{errtext}}</h2>
+        
+        <div class="row mb-3">
+            <div class="offset-3 col-6">
+                <input type="text" class="form-control" maxlength="10"  placeholder="Username" [formControl]="myFormGroup.controls['userid']" [ngClass]="{'is-invalid': submitted && f.userid.errors}"/>
+                <div *ngIf="submitted && f.userid.errors" class="invalid-feedback"></div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        
+        <div class="row mb-3">
+          <div class="offset-3 col-sm-6">
+            <input type="password" class="form-control" maxlength="10"  placeholder="Password" [formControl]="myFormGroup.controls['userpwd']" [ngClass]="{'is-invalid': submitted && f.userpwd.errors}"/>
+            <div *ngIf="submitted && f.userpwd.errors" class="invalid-feedback"></div>
+          </div>
+          <div class="col-3"></div>
+        </div>
+        
+        <div class="row">
+          <div class="offset-3 mt-2 col-2 ">
+            <a class="mx-4 " [routerLink]="['/register']">Create Account</a>
+          </div>
+          <div class="col">
+            <input type="submit"  value="Login" class=" btn btn-primary"/>
+          </div>
+        
+        </div>
+    </form>
+</div>
+

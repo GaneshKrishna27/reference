@@ -1,0 +1,24 @@
+<div class="row mt-4" >
+    <div class="offset-6 col text-center" style="text-align: right;">
+        
+        <ul class="nav nav-pills justify-content-right">
+            <li class="nav-item mx-2">
+                <a  class="nav-link btn-warning" [routerLink]="['/images']"><b>Images</b></a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link btn-warning" [routerLink]="['/videos']"><b>Videos</b> </a>
+            </li>
+        </ul>
+</div>
+<div  class="row mt-4">
+    <div *ngFor="let i of fileslist" class="card-deck text-center">
+        <div class="card mx-5 my-3" >
+            <img src="/assets/images/pic.jfif" alt="Pic1" class="card-img-top" (click)="getDetails(i.id)" >
+            <div class="card-body">
+                {{i.title}}<br>
+                <i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div>
+                <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike1-bs3"></div>
+            </div>  
+        </div>
+    </div>
+</div>

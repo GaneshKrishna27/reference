@@ -1,0 +1,26 @@
+<div class="row mt-4" >
+    <div class="offset-6 col text-center" style="text-align: right;">
+        
+        <ul class="nav nav-pills justify-content-right">
+            <li class="nav-item mx-2">
+                <a  class="nav-link btn-warning" [routerLink]="['/following']"><b>Following</b></a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link btn-warning" [routerLink]="['/followers']"><b>Followers</b> </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row mt-4">
+    <div class="card-deck text-center">
+    <div class="card mx-3 my-3">
+        <img src="/assets/images/pic.jfif" alt="Card at first " class="card-img-top">
+        <div class="card-body">
+            {{username}}<br>
+            <button class="button btn-outline-success">
+            <span><h4>Following</h4></span>
+            </button>
+        </div>  
+    </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<header>
+        <div class="row">
+            <div class="col-3">
+                <img src="/assets/images/pixogram.png" alt="LOGO" width="150px" height="150px" [routerLink]="['/gallery']">
+            </div>
+            <div class="offset-1 col-sm-6 text-center">
+                <br><br>
+                <ul class="nav nav-pills justify-content-right">
+                    <li class="nav-item">
+                        <a  class="nav-link btn-outline-primary" [routerLink]="['/upload']"><b>Upload</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary" [routerLink]="['/gallery']"><b>Gallery</b> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary" [routerLink]="['/follow']"><b>Followers/Following</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-outline-primary" [routerLink]="['/account']"><b>Account</b></a>
+                    </li>        
+                </ul>    
+            </div>
+        </div>
+</header>

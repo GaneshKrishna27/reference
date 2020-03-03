@@ -1,0 +1,75 @@
+{
+  "users": [
+    {
+      "fname": "sairam",
+      "lname": "adusumalli",
+      "username": "sairam23",
+      "uemail": "sairam23@gmail.com",
+      "dob": "2006-02-01",
+      "password": "sairam23",
+      "profile": "C:\\fakepath\\Laboratory_reports.pdf",
+      "id": 1
+    },
+    {
+      "fname": "hari",
+      "lname": "darapaneni",
+      "username": "Hari23",
+      "uemail": "hari1234@yahoo.com",
+      "dob": "1998-01-28",
+      "password": "hari1234",
+      "profile": "C:\\fakepath\\Citibank Account Statement.pdf",
+      "id": 2
+    }
+  ],
+  "mediafiles": [
+    {
+      "id": 1,
+      "url": "image.png",
+      "title": "Beach",
+      "description": "A pic of beach in the early morning...",
+      "tags": "beach,morning"
+    },
+    {
+      "url": "C:\\fakepath\\Discharge_summary.jpeg",
+      "title": "t",
+      "description": "d",
+      "tags": "t,t",
+      "id": 2
+    },
+    {
+      "url": "C:\\fakepath\\IP_final.jpeg",
+      "title": "i",
+      "description": "p",
+      "tags": "final",
+      "id": 3
+    },
+    {
+      "url": "C:\\fakepath\\Pharmacy_Bills.jpeg",
+      "title": "p",
+      "description": "b",
+      "tags": "bills",
+      "id": 4
+    },
+    {
+      "url": "C:\\fakepath\\Discharge_summary.jpeg",
+      "title": "kfsv",
+      "description": "ldfkz",
+      "tags": "kmvd",
+      "id": 5
+    },
+    {
+      "url": "C:\\fakepath\\IP_final.jpeg",
+      "title": "dv',",
+      "description": "xcmkmvc",
+      "tags": "fjk",
+      "id": 6
+    },
+    {
+      "url": "C:\\fakepath\\pixogram.png",
+      "title": "bhanu",
+      "description": "bhanu desc",
+      "tags": "bhanu,tags",
+      "id": 7
+    }
+  ]
+}
